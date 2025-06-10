@@ -1,0 +1,1985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    text-align: left;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+QLineEdit{
+height: 30px;
+color: rgb(0, 0, 0);
+border: none;
+padding-left: 10px;
+}
+
+QComboBox{
+height: 30px;
+color: rgb(0, 0, 0);
+border: none;
+padding-left: 10px;
+}
+
+QStackedWidget #Avtorisation{
+background-color: rgb(1, 50, 32);
+}
+
+
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="1">
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(1, 50, 32);</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Icon">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../media/icons8-карта-сотрудник-48.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="rol">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;
+text-align: left;
+height: 40px;
+border: none;
+padding-left: 10px;
+background-color:  transparent;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(170, 0, 127);</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="Leaderboard">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    text-align: left;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+
+
+</string>
+               </property>
+               <property name="text">
+                <string>Лидерборд</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-podium-24 (1).png</normaloff>
+                 <normalon>../media/icons8-podium-24.png</normalon>../media/icons8-podium-24 (1).png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AssignedDocuments">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Доступные документы</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-документы-24.png</normaloff>
+                 <normalon>../media/2.png</normalon>../media/icons8-документы-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AvailableDocuments">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Назначенные документы</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-сравнить-24.png</normaloff>
+                 <normalon>../media/6.png</normalon>../media/icons8-сравнить-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AddDiscipline">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Добавить дисциплину</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-обучение-24.png</normaloff>
+                 <normalon>../media/icons8-урок-24.png</normalon>../media/icons8-обучение-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="DistributeDocuments">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Распределить документы</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-отправить-документ-24.png</normaloff>
+                 <normalon>../media/9.png</normalon>../media/icons8-отправить-документ-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CheckDocuments">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Проверить документы</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-отмеченный-документ-24.png</normaloff>
+                 <normalon>../media/5.png</normalon>../media/icons8-отмеченный-документ-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CreateSpecialty">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Создать специальность</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-отдел-24.png</normaloff>
+                 <normalon>../media/icons8-отдел-24 (1).png</normalon>../media/icons8-отдел-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CreateDepartment">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Создать кафедру</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-школа-24.png</normaloff>
+                 <normalon>../media/7.png</normalon>../media/icons8-школа-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AddUser">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Добавить пользователя</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-добавить-пользователя-24.png</normaloff>
+                 <normalon>../media/3.png</normalon>../media/icons8-добавить-пользователя-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="DownloadTemplate">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Загрузка шаблонов</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-загрузить-24.png</normaloff>
+                 <normalon>../media/icons8-upload-24.png</normalon>../media/icons8-загрузить-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CreateDocument">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Создать документ</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-вставить-страницу-24.png</normaloff>
+                 <normalon>../media/icons8-вставить-страницу-24 (2).png</normalon>../media/icons8-вставить-страницу-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="Exit">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Выйти</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../media/icons8-выйти-24.png</normaloff>
+                 <normalon>../media/1.png</normalon>../media/icons8-выйти-24.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QWidget" name="widget_5" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="Menu">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../media/icons8-меню-241.png</normaloff>../media/icons8-меню-241.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget"/>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="Avtorisation">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="PasswordField">
+           <property name="styleSheet">
+            <string notr="true"> border-radius: 10px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="dragEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>Пароль</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="8" column="1">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>429</width>
+             <height>27</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="9" column="1">
+          <widget class="QPushButton" name="SignInButton">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    color: rgb(1, 50, 32);
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+	background-color: #F5FAFE;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+	text-align: center;
+}</string>
+           </property>
+           <property name="text">
+            <string>Войти</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLabel" name="ErrorField">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>429</width>
+             <height>25</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="1">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>429</width>
+             <height>26</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="0">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="2">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>53</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../media/icons8-управление-клиентами-96.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>30</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;
+text-align: left;
+height: 50px;
+border: none;
+padding-left: 10px;
+background-color:  transparent;</string>
+             </property>
+             <property name="text">
+              <string>Авторизация</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>0</width>
+               <height>53</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="LoginField">
+           <property name="styleSheet">
+            <string notr="true"> border-radius: 10px;</string>
+           </property>
+           <property name="placeholderText">
+            <string>Логин</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>429</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="HeadDepartment">
+        <layout class="QGridLayout" name="gridLayout_7"/>
+       </widget>
+       <widget class="QWidget" name="Leaderboards">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Прогрес специальности</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="ProgressSpecialty"/>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Прогресс преподователя</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="TeachersProgress"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="Administration">
+        <layout class="QGridLayout" name="gridLayout_9"/>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_6" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout"/>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="QWidget" name="test" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(1, 50, 32);
+
+
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(170, 0, 127);</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="spacing">
+            <number>15</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="Icon_2">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>../media/icons8-карта-сотрудник-48.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Leaderboard1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-podium-24 (1).png</normaloff>
+               <normalon>../media/icons8-podium-24.png</normalon>../media/icons8-podium-24 (1).png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AssignedDocuments1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-документы-24.png</normaloff>
+               <normalon>../media/2.png</normalon>../media/icons8-документы-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AvailableDocuments1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-сравнить-24.png</normaloff>
+               <normalon>../media/6.png</normalon>../media/icons8-сравнить-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AddDiscipline1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-обучение-24.png</normaloff>
+               <normalon>../media/icons8-урок-24.png</normalon>../media/icons8-обучение-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="DistributeDocuments1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-отправить-документ-24.png</normaloff>
+               <normalon>../media/9.png</normalon>../media/icons8-отправить-документ-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CheckDocuments1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-отмеченный-документ-24.png</normaloff>
+               <normalon>../media/5.png</normalon>../media/icons8-отмеченный-документ-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CreateSpecialty1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-отдел-24.png</normaloff>
+               <normalon>../media/icons8-отдел-24 (1).png</normalon>../media/icons8-отдел-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CreateDepartment1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-школа-24.png</normaloff>
+               <normalon>../media/7.png</normalon>../media/icons8-школа-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AddUser1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-добавить-пользователя-24.png</normaloff>
+               <normalon>../media/3.png</normalon>../media/icons8-добавить-пользователя-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="DownloadTemplate1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-загрузить-24.png</normaloff>
+               <normalon>../media/icons8-upload-24.png</normalon>../media/icons8-загрузить-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="CreateDocument1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-вставить-страницу-24.png</normaloff>
+               <normalon>../media/icons8-вставить-страницу-24 (2).png</normalon>../media/icons8-вставить-страницу-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Exit1">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: white; /* Цвет текста по умолчанию */
+    height: 30px;
+    border: none;
+    background-color: transparent; /* Фоновый цвет по умолчанию */
+    border-radius: 10px;
+
+}
+
+QPushButton:checked {
+    background-color: #F5FAFE; /* Цвет фона при нажатии */
+    color:  rgb(1, 50, 32);         /* Цвет текста при нажатии */
+    font-weight: bold;        /* Полужирный текст при нажатии */
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../media/icons8-выйти-24.png</normaloff>
+               <normalon>../media/1.png</normalon>../media/icons8-выйти-24.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Exit1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Exit</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>570</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>189</x>
+     <y>569</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CreateDocument1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CreateDocument</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DownloadTemplate1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>DownloadTemplate</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddUser1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AddUser</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CreateSpecialty1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CreateSpecialty</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckDocuments1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CheckDocuments</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DistributeDocuments1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>DistributeDocuments</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddDiscipline1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AddDiscipline</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AvailableDocuments1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AvailableDocuments</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AssignedDocuments1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AssignedDocuments</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Leaderboard1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Leaderboard</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Leaderboard</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Leaderboard1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>49</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AssignedDocuments</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AssignedDocuments1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>42</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AvailableDocuments</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AvailableDocuments1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>57</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddDiscipline</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AddDiscipline1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>22</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DistributeDocuments</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>DistributeDocuments1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CheckDocuments</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CheckDocuments1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CreateSpecialty</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CreateSpecialty1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>55</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddUser</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>AddUser1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DownloadTemplate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>DownloadTemplate1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CreateDocument</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CreateDocument1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Exit</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Exit1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>569</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>570</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>test</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>294</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>widget_4</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
